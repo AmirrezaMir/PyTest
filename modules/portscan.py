@@ -9,8 +9,7 @@ def start():
     os.system("clear")
 
     # Asking for Input, Then get the real ip address
-    user_input = input("Enter IP/Domain to scan --> ")
-    ip = socket.gethostbyname(user_input)
+    ip = socket.gethostbyname(input(Fore.RED + "Please Enter An IP Address To Scan\n >>> "))
 
     # Scan Start Time
     t1 = datetime.now()
